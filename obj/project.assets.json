@@ -2758,11 +2758,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\domin\\Projects\\Mix-Calculator\\Mix-Calculator.csproj",
+      "projectUniqueName": "c:\\Users\\domin\\Projects\\Mix-Calculator\\Mix-Calculator.csproj",
       "projectName": "Mix-Calculator",
-      "projectPath": "C:\\Users\\domin\\Projects\\Mix-Calculator\\Mix-Calculator.csproj",
+      "projectPath": "c:\\Users\\domin\\Projects\\Mix-Calculator\\Mix-Calculator.csproj",
       "packagesPath": "C:\\Users\\domin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\domin\\Projects\\Mix-Calculator\\obj\\",
+      "outputPath": "c:\\Users\\domin\\Projects\\Mix-Calculator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\domin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -3105,5 +3105,13 @@
         }
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file c:\\Users\\domin\\Projects\\Mix-Calculator\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0."
+    }
+  ]
 }
