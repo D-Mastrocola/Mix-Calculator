@@ -1,5 +1,8 @@
 ﻿using System;
 
+//https://spectreconsole.net/quick-start
+using Spectre.Console;
+
 namespace Mix_Calculator
 {
     public class Product
@@ -21,8 +24,9 @@ namespace Mix_Calculator
     {
         static void Main(string[] args)
         {
+        
             Console.Title = "Mix Calculations";
-
+            /*
             Product RawMilk = new Product();
             RawMilk.Name = "Raw Milk";
             RawMilk.BF = 4.17;
@@ -34,6 +38,11 @@ namespace Mix_Calculator
             RawCream.BF = 43.17;
             RawCream.TS = 48.89;
             RawCream.Calc();
+
+            Console.ReadKey();
+            */
+
+            AnsiConsole.Markup("[underline red]Hello[/] World!");
 
             Console.ReadKey();
         }
