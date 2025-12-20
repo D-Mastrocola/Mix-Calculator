@@ -9,8 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="ConsoleMenu-simple" Version="2.7.0" />
     <PackageReference Include="Spectre.Console" Version="0.54.0" />
     <PackageReference Include="Spectre.Console.Cli" Version="0.53.1" />
+    <PackageReference Include="Terminal.Gui" Version="2.0.0-alpha.*" />
   </ItemGroup>
 
 </Project>

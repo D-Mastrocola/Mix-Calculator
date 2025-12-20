@@ -3,6 +3,8 @@
 //https://spectreconsole.net/quick-start
 using Spectre.Console;
 
+
+
 namespace Mix_Calculator
 {
     public class Product
@@ -24,7 +26,7 @@ namespace Mix_Calculator
     {
         static void Main(string[] args)
         {
-        
+
             Console.Title = "Mix Calculations";
             /*
             Product RawMilk = new Product();
@@ -42,7 +44,33 @@ namespace Mix_Calculator
             Console.ReadKey();
             */
 
-            AnsiConsole.Markup("[underline red]Hello[/] World!");
+
+
+            // Create a table
+            var table = new Table();
+
+            // Add some columns
+            table.AddColumn("Tank");
+            table.AddColumn(new TableColumn("Contents").Centered());
+            table.AddColumn("%BF");
+            table.AddColumn("%SNF");
+            table.AddColumn("%TS");
+
+            // Add some rows
+            table.AddRow("RT1", "Raw Milk", "4.17", "", "13.89");
+            table.AddRow("PT7", "Raw Cream", "43.17", "", "48.89");
+
+
+            //Makes Table take up as much width as possible.
+            //Affected by a change in window size
+            table.Expand();
+
+            //Shows Row Seperators
+            table.ShowRowSeparators();
+            
+
+            // Render the table to the console
+            AnsiConsole.Write(table);
 
             Console.ReadKey();
         }
