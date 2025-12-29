@@ -32,3 +32,6 @@ C:\Users\domin\Projects\Mix-Calculator\obj\Debug\net10.0\staticwebassets.build.j
 C:\Users\domin\Projects\Mix-Calculator\obj\Debug\net10.0\staticwebassets.development.json
 C:\Users\domin\Projects\Mix-Calculator\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 C:\Users\domin\Projects\Mix-Calculator\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\domin\Projects\Mix-Calculator\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\domin\Projects\Mix-Calculator\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\domin\Projects\Mix-Calculator\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll

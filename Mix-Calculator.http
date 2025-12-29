@@ -1,6 +1,0 @@
-@Mix_Calculator_HostAddress = http://localhost:5232
-
-GET {{Mix_Calculator_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

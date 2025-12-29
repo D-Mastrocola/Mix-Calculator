@@ -2,8 +2,6 @@
 
 //https://spectreconsole.net/quick-start
 //using Spectre.Console;
-
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -20,7 +18,14 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+
+//app.MapGet("/", () => "Hello World!");
+
+
+
+
 app.Run();
+
 
 
 

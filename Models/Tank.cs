@@ -1,4 +1,4 @@
-namespace Tanks.Models;
+namespace Mix_Calculator.Models;
 
 public class Tank
 {

@@ -1,11 +1,11 @@
-using Tanks.Models;
-using Tanks.Services;
+using Mix_Calculator.Models;
+using Mix_Calculator.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Tanks.Controllers;
 
 [ApiController]
-[Route("[contoller]")]
+[Route("[controller]")]
 public class TanksController : ControllerBase
 {
     //http action to get all the tanks from our service and to the client

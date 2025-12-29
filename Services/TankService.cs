@@ -1,10 +1,10 @@
-using Tanks.Models;
+using Mix_Calculator.Models;
 
-namespace Tanks.Services;
+namespace Mix_Calculator.Services;
 
 public class TankService
 {
-    //Each quote added will be given available ID
+    //Each Tank added will be given available ID
     static int availableId = 3;
 
     //temporary database --cache
@@ -39,6 +39,10 @@ public class TankService
             }
         };
     }
-    //Gets all the quotes
+    //Gets all the tanks
     public static List<Tank> GetAll() => TanksDB;
+
+    //Get a single tank
+    public static Tank? Get(int id) => TanksDB
+    .FirstOrDefault(tank => tank.Id == id);
 }
