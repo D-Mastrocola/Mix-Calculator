@@ -1,7 +1,7 @@
 ﻿using System;
 
 //https://spectreconsole.net/quick-start
-using Spectre.Console;
+//using Spectre.Console;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,36 +20,14 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast = Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
-
 app.Run();
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
 
 
 
 
-namespace Mix_Calculator
+
+/*namespace Mix_Calculator
 {
     public class Product
     {
@@ -72,21 +50,8 @@ namespace Mix_Calculator
         {
 
             Console.Title = "Mix Calculations";
-            /*
-            Product RawMilk = new Product();
-            RawMilk.Name = "Raw Milk";
-            RawMilk.BF = 4.17;
-            RawMilk.TS = 13.89;
-            RawMilk.Calc();
-
-            Product RawCream = new Product();
-            RawCream.Name = "Raw Cream";
-            RawCream.BF = 43.17;
-            RawCream.TS = 48.89;
-            RawCream.Calc();
-
-            Console.ReadKey();
-            */
+            
+      
 
 
 
@@ -119,4 +84,4 @@ namespace Mix_Calculator
             Console.ReadKey();
         }
     }
-}
+}*/
