@@ -1,64 +1,78 @@
-﻿using System;
-using MySql.Data;
-using MySql.Data.MySqlClient;
+﻿﻿using System;
 
-/*namespace Mix_Calculator
+//https://spectreconsole.net/quick-start
+using Spectre.Console;
+
+
+
+namespace Mix_Calculator
 {
+    public class Product
+    {
+        public string Name;
+        public string Tank;
+        public double BF;
+        public double TS;
+
+        public void Calc()
+        {
+            Console.WriteLine("Calculating...\n\n");
+
+            Console.WriteLine("=============\n" + Name + "\n=============");
+            Console.WriteLine("BF: " + BF + "\nSNF: " + (TS - BF) + "\nTS: " + TS);
+        }
+    }
     class Program
     {
         static void Main(string[] args)
         {
-            Console.Title = "Mix Calculations";
 
+            Console.Title = "Mix Calculations";
+            /*
+            Product RawMilk = new Product();
+            RawMilk.Name = "Raw Milk";
+            RawMilk.BF = 4.17;
+            RawMilk.TS = 13.89;
+            RawMilk.Calc();
+
+            Product RawCream = new Product();
+            RawCream.Name = "Raw Cream";
+            RawCream.BF = 43.17;
+            RawCream.TS = 48.89;
+            RawCream.Calc();
+
+            Console.ReadKey();
+            */
+
+
+
+            // Create a table
+            var table = new Table();
+
+            // Add some columns
+            table.AddColumn("Tank");
+            table.AddColumn(new TableColumn("Contents").Centered());
+            table.AddColumn("%BF");
+            table.AddColumn("%SNF");
+            table.AddColumn("%TS");
+
+            // Add some rows
+            table.AddRow("RT1", "Raw Milk", "4.17", "", "13.89");
+            table.AddRow("PT7", "Raw Cream", "43.17", "", "48.89");
+
+
+            //Makes Table take up as much width as possible.
+            //Affected by a change in window size
+            table.Expand();
+
+            //Shows Row Seperators
+            table.ShowRowSeparators();
             
-            Console.WriteLine("Hello World!");
+
+            // Render the table to the console
+            AnsiConsole.Write(table);
+
             Console.ReadKey();
         }
-    }
-}*/
-using MySql.Data;
-using MySql.Data.MySqlClient;
-
-namespace Data
-{
-    public class DBConnection
-    {
-        private DBConnection()
-        {
-        }
-
-        public string Server { get; set; }
-        public string DatabaseName { get; set; }
-        public string UserName { get; set; }
-        public string Password { get; set; }
-
-        public MySqlConnection Connection { get; set;}
-
-        private static DBConnection _instance = null;
-        public static DBConnection Instance()
-        {
-            if (_instance == null)
-                _instance = new DBConnection();
-           return _instance;
-        }
-    
-        public bool IsConnect()
-        {
-            if (Connection == null)
-            {
-                if (String.IsNullOrEmpty(databaseName))
-                    return false;
-                string connstring = string.Format("Server={0}; database={1}; UID={2}; password={3}", Server, DatabaseName, UserName, Password);
-                Connection = new MySqlConnection(connstring);
-                Connection.Open();
-            }
-    
-            return true;
-        }
-    
-        public void Close()
-        {
-            Connection.Close();
-        }        
     }
 }
