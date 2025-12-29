@@ -13,7 +13,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mix-Calculator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d69b7e8acfca2defb3195945813383e56cb1253")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+50ee083cb0de09c6215848d086fe9381d4cef2a5")]
+>>>>>>> feature/create
 [assembly: System.Reflection.AssemblyProductAttribute("Mix-Calculator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mix-Calculator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

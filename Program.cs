@@ -1,11 +1,38 @@
 ﻿using System;
 
 //https://spectreconsole.net/quick-start
-using Spectre.Console;
+//using Spectre.Console;
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+builder.Services.AddOpenApi();
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.MapOpenApi();
+}
+
+app.UseHttpsRedirection();
+
+
+//app.MapGet("/", () => "Hello World!");
 
 
 
-namespace Mix_Calculator
+
+app.Run();
+
+
+
+
+
+
+
+/*namespace Mix_Calculator
 {
     public class Product
     {
@@ -28,21 +55,8 @@ namespace Mix_Calculator
         {
 
             Console.Title = "Mix Calculations";
-            /*
-            Product RawMilk = new Product();
-            RawMilk.Name = "Raw Milk";
-            RawMilk.BF = 4.17;
-            RawMilk.TS = 13.89;
-            RawMilk.Calc();
-
-            Product RawCream = new Product();
-            RawCream.Name = "Raw Cream";
-            RawCream.BF = 43.17;
-            RawCream.TS = 48.89;
-            RawCream.Calc();
-
-            Console.ReadKey();
-            */
+            
+      
 
 
 
@@ -67,7 +81,6 @@ namespace Mix_Calculator
 
             //Shows Row Seperators
             table.ShowRowSeparators();
-            
 
             // Render the table to the console
             AnsiConsole.Write(table);
@@ -75,4 +88,4 @@ namespace Mix_Calculator
             Console.ReadKey();
         }
     }
-}
+}*/
