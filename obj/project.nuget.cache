@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "n4xOJWMbJVQ=",
+  "dgSpecHash": "qvdrYWMisDM=",
   "success": true,
-  "projectFilePath": "c:\\Users\\domin\\Projects\\Mix-Calculator\\Mix-Calculator.csproj",
+  "projectFilePath": "C:\\Users\\domin\\Projects\\Mix-Calculator\\Mix-Calculator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\domin\\.nuget\\packages\\colorhelper\\1.8.1\\colorhelper.1.8.1.nupkg.sha512",
     "C:\\Users\\domin\\.nuget\\packages\\consolemenu-simple\\2.7.0\\consolemenu-simple.2.7.0.nupkg.sha512",
@@ -41,15 +41,5 @@
     "C:\\Users\\domin\\.nuget\\packages\\testableio.system.io.abstractions.wrappers\\21.0.22\\testableio.system.io.abstractions.wrappers.21.0.22.nupkg.sha512",
     "C:\\Users\\domin\\.nuget\\packages\\wcwidth\\2.0.0\\wcwidth.2.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "message": "Problem reading the cache file c:\\Users\\domin\\Projects\\Mix-Calculator\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0.",
-      "projectPath": "c:\\Users\\domin\\Projects\\Mix-Calculator\\Mix-Calculator.csproj",
-      "warningLevel": 1,
-      "filePath": "c:\\Users\\domin\\Projects\\Mix-Calculator\\Mix-Calculator.csproj",
-      "targetGraphs": []
-    }
-  ]
+  "logs": []
 }
