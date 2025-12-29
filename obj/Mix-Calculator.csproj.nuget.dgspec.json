@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\domin\\Projects\\Mix-Calculator\\Mix-Calculator.csproj": {}
+    "C:\\Users\\domin\\Projects\\Mix-Calculator\\Mix-Calculator.csproj": {}
   },
   "projects": {
-    "c:\\Users\\domin\\Projects\\Mix-Calculator\\Mix-Calculator.csproj": {
+    "C:\\Users\\domin\\Projects\\Mix-Calculator\\Mix-Calculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\domin\\Projects\\Mix-Calculator\\Mix-Calculator.csproj",
+        "projectUniqueName": "C:\\Users\\domin\\Projects\\Mix-Calculator\\Mix-Calculator.csproj",
         "projectName": "Mix-Calculator",
-        "projectPath": "c:\\Users\\domin\\Projects\\Mix-Calculator\\Mix-Calculator.csproj",
+        "projectPath": "C:\\Users\\domin\\Projects\\Mix-Calculator\\Mix-Calculator.csproj",
         "packagesPath": "C:\\Users\\domin\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\domin\\Projects\\Mix-Calculator\\obj\\",
+        "outputPath": "C:\\Users\\domin\\Projects\\Mix-Calculator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\domin\\AppData\\Roaming\\NuGet\\NuGet.Config"
